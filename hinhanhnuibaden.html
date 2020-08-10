@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/IMG_6225.jpg" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
+    <link rel="stylesheet" href="./gallery-grid.css" />
+    <link rel="stylesheet" href="./style _hinhanh.css" />
+    <title>Nguyen Van Hoang</title>
+</head>
+
+<style>
+    /* Make the image fully responsive */
+    
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="Container" id="Container">
+        <div class="navigation" id="navbar">
+            <div class="ul-navigation" id="ulNavigation">
+                <li class="li-navigation">
+                    <a class="item-navigation" href="./index.html">Trang Chu</a>
+                </li>
+                <li class="li-navigation">
+                    <a class="item-navigation" href="./hinhanh.html">Hình Ảnh</a>
+                </li>
+                <li class="li-navigation">
+                    <a class="item-navigation" href="#khoanhkhac">Khoảnh Khắc</a>
+                </li>
+                <li class="li-navigation">
+                    <a class="item-navigation" href="#thongtin">Thông Tin</a>
+                </li>
+            </div>
+        </div>
+
+        <div class="header" id="header">
+            <div class="headerContent">
+                <div class="h1-Header">Hình Ảnh</div>
+                <p class="txt-Header">Khánh Hòa, Việt Nam</p>
+                <div class="Font-Icon">
+                    <a target="_blank" href="https://www.facebook.com/hoang.nguyenbao.758" class="fab fa-facebook-f" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://www.facebook.com/hoang.nguyenbao.758" class="fab fa-instagram" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCiuYLzUfgS0bfxgIlBg-KwQ/about" class="fab fa-youtube" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://github.com/NguyenVanHoang19" class="fab fa-github" style="font-size: 30px;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutMe" id="about" style="height: 0.5rem;"></div>
+        <div class="works" id="works">
+            <p>HOẠT ĐỘNG NỔI BẬC</p>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/ChuaDamMon.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/group_NuiBa.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/3_Thang.jpg" />
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <hr />
+            <!--  -->
+
+            <div class="container gallery-container">
+                <h1>Du lịch núi bà đen - Tây Ninh</h1>
+
+                <p class="page-description text-center">
+                    Grid Layout With Zoom Effect
+                </p>
+
+                <div class="tz-gallery">
+                    <div class="row" id="hinhanhnuiba">
+                        <script>
+                            let hinhanh = document.querySelector("#hinhanhnuiba");
+                            for (var i = 1; i <= 69; i++) {
+                                hinhanh.innerHTML += `<div class="hinh col-sm-6 col-md-4">
+                                    <a class="lightbox" href="./images/${i}.jpg">
+                                        <img src="./images/${i}.jpg" alt="Park">
+                                    </a>
+                                </div>`;
+                                // listHinh.push(str);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials" id="testimonials">
+            <div class="groupGrid">
+                <div class="testimonials-Left">
+                    <h1>&rarrlp;</h1>
+                </div>
+                <div class="testimonials-Right">
+                    <h1>" Target is just a number but let number tell who you are "</h1>
+                    <h1>" The road to success is without the idler's footprint "</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactMe" id="contact">
+            <div class="redirect-Top">
+                <a href="#header" class="fas fa-angle-up" style="font-size: 36px;"></a>
+            </div>
+            <div class="gridContactMe">
+                <div class="Font-Contact">
+                    <a target="_blank" href="https://www.facebook.com/hoang.nguyenbao.758" class="fab fa-facebook-f" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://www.facebook.com/hoang.nguyenbao.758" class="fab fa-instagram" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCiuYLzUfgS0bfxgIlBg-KwQ/about" class="fab fa-youtube" style="font-size: 30px;"></a>
+                    <a target="_blank" href="https://github.com/NguyenVanHoang19" class="fab fa-github" style="font-size: 30px;"></a>
+                </div>
+                <span>&copy Copyright & NguyenVanHoang 2020</span>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <input type="checkbox" id="navi-toggle" class="nav-checkbox" />
+            <label for="navi-toggle" class="lb-icon">
+          <i class="material-icons nav-open icon-front" style="font-size: 32px;"
+            >&#xe5d2;</i
+          >
+          <i
+            class="fa fa-remove nav-close icon-back"
+            style="font-size: 32px;"
+          ></i>
+        </label>
+            <div class="nav-background"></div>
+            <div class="group-nav">
+                <ul class="nav-list">
+                    <li class="li-navigation">
+                        <a class="item-navigation" href="./index.html">Trang Chu</a>
+                    </li>
+                    <li class="li-navigation">
+                        <a class="item-navigation" href="./hinhanh.html">Hình Ảnh</a>
+                    </li>
+                    <li class="li-navigation">
+                        <a class="item-navigation" href="#khoanhkhac">Khoảnh Khắc</a>
+                    </li>
+                    <li class="li-navigation">
+                        <a class="item-navigation" href="#thongtin">Thông Tin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./jshinhanh.js"></script> -->
+    <script src="./javascripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+
+</body>
+
+</html>
