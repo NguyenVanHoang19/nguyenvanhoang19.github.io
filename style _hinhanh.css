@@ -654,7 +654,7 @@ hr {
     }
     .hinh {
         width: 90%;
-        height: 200px;
+        /* height: 200px; */
     }
     .fixResume {
         padding-top: 0rem;
